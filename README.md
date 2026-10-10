@@ -2,6 +2,7 @@
 - 화상 영어 서비스 '링글(Ringle)'에 대한 사용자들의 피드백과 여론을 수집하고 분석했습니다.
 - Google Play 스토어의 앱 리뷰와 네이버 블로그 포스트를 주요 데이터 소스로 활용하며, 데이터 수집(Crawling/Scraping), 전처리, 키워드 추출, 토픽 분류 및 감성 분석 과정을 정리했습니다.
 <br/>
+<br/>
 
 ## 🗂️ 프로젝트 구조
 ```
@@ -17,6 +18,7 @@ ringle_analysis/
 │   └── naver_blog_ringle.csv          # 크롤링된 블로그 포스트 데이터
 └── .venv/                       # Python 가상 환경
 ```
+<br/>
 <br/>
 
 ## 🚀 주요 기능 및 워크플로우
@@ -39,6 +41,7 @@ ringle_analysis/
     *   문장 단위로 쪼개어 '가격/가성비', '피드백/교정', '스피킹/학습' 등의 토픽으로 분류합니다.
     *   자체 정의된 감성 사전을 바탕으로 각 토픽별 긍정/부정 점수를 산출하여 사용자들의 체감 만족도를 분석합니다.
 <br/>
+<br/>
 
 ## 💻 설치 및 실행 방법
 1.  Python 환경 준비 (Python 3.10 권장)
@@ -51,4 +54,5 @@ ringle_analysis/
 3.  네이버 블로그 크롤러 실행 시, `ringle_naver_blog_crawler.py` 상단의 `NAVER_CLIENT_ID`와 `NAVER_CLIENT_SECRET`에 본인의 네이버 API ID/Secret을 입력해야 합니다.
   
 4.  각 폴더의 `.ipynb` 파일을 주피터 노트북 환경에서 순차적으로 실행합니다.
+<br/>
 <br/>
